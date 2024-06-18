@@ -87,7 +87,7 @@ export default function App() {
     ?.reduce((acc, cur) => acc + cur, 0);
 
   useEffect(function () {
-    fetch("https://my-json-server.typicode.com/")
+    fetch("https://my-json-server.typicode.com/PEKENIOO/react-quiz/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch(dispatch({ type: "dataFailed" }));
