@@ -1,7 +1,6 @@
 import Options from "./Options";
-import Button from "./Button";
 
-function Question({ question, dispatch, answer, index, numQuestions }) {
+function Question({ question, dispatch, answer}) {
   return (
     <div>
       <h4>{question.question}</h4>
